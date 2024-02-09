@@ -1,0 +1,25 @@
+/* asterisk wildcard selector to override any default styling added by the browser */ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */ 
+header {
+    background-color: aqua;
+
+}
+
+/* main */ 
+main {
+    background-color: bisque;
+
+}
+
+/* footer */
+footer {
+    background-color: blueviolet;
+
+}
