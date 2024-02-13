@@ -1,3 +1,4 @@
+ 
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
@@ -90,7 +91,7 @@ nav {
 
 /* main */ 
 main {
-    background-color: lightblue;
+    background-color: #ffffff;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -103,6 +104,7 @@ main {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center/cover;
+    position: relative;
 }
 
 
@@ -118,8 +120,9 @@ main {
     padding-left: 10px;
 }
 
-#cover-text, h2, #cover-text, h3 {
-    color: white; 
+#cover-text>h2, 
+#cover-text>h3 {
+    color: #ffffff; 
 }
 
 /* Reasons section */ 
@@ -152,7 +155,7 @@ hr {
 /* Circle Background */
 #circle-cover-bg {
     background: url(../images/reasons-image.webp) no-repeat top center / cover;
-    padding-bottom: 20px;   
+    margin-bottom: 20px;   
     height: 90vw;
     width: 90vw;
     /* border-radius creates the circle  */
@@ -167,6 +170,30 @@ hr {
     justify-content: center;
 }
 
+/* Meetup times section */
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;  
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup time divs over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* overriding the body h3 color */ 
+    color: #fafafa;
+}
 /* footer */
 #social-networks {
     text-align: center;
@@ -281,3 +308,4 @@ hr {
 
     
 }
+
